@@ -3,7 +3,7 @@ import { TrendingUp, TrendingDown, Activity, Wallet, Bot, BarChart3, RefreshCw, 
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
 // URL del backend
-const API_URL = 'http://localhost:3001/api';
+const API_URL = 'https://binance-dashboard-backend.onrender.com/api';
 
 export default function BinanceDashboard() {
   const [activeTab, setActiveTab] = useState('overview');
