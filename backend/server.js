@@ -15,7 +15,13 @@ const cache = new NodeCache({ stdTTL: parseInt(process.env.CACHE_TTL) || 10 });
 
 // Configurar CORS
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://localhost:3000', 'http://localhost:8080'],
+  origin: [
+    'http://localhost:5173', 
+    'http://localhost:3000', 
+    'http://localhost:8080',
+    'https://binance-dashboard-bu1750ksr-dfelixuys-projects.vercel.app',
+    /\.vercel\.app$/  // Permite todos los dominios de Vercel
+  ],
   credentials: true
 }));
 
